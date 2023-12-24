@@ -1,5 +1,6 @@
 <?php
 
+    // Inicio classe pai
 
 class Veiculo{
 
@@ -20,6 +21,17 @@ class Veiculo{
     } 
 }
 
+    // Fim classe pai
+
+
+
+
+
+
+
+
+    // Inicio classes filhos
+
 class Carro extends Veiculo{
     public $arCondicionado = null;
 
@@ -30,23 +42,10 @@ class Carro extends Veiculo{
     }
 }
 
-
-$carro = new Carro('EFGO88901', 'Preto');
-echo $carro->resumo();
+    // Final classes filhos
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 ?>
