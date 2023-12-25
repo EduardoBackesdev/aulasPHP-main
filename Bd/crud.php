@@ -31,8 +31,21 @@ $sql = $pdo->prepare("DELETE FROM `pessoas`  ");
 // selecionar
 
 $pdo = new PDO("mysql:host=localhost;dbname=aulasphp", 'root','');
-$sql = $pdo->prepare();
-$sql->execute();
+$sql = $pdo->prepare("SELECT * FROM `pessoas`");
+// $sql->execute();
+$info = $sql->fetchAll();
+
+foreach ($info as $key => $value) {
+
+    echo ' Nome: '.$value['nome'].' sobrenome: '.$value['sobrenome'].' altura: '.$value['altura'];
+    
+}
+
+// selecionar
+
+
+
+ 
 
 // selecionar
 
