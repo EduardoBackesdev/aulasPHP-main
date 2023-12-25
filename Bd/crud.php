@@ -28,6 +28,8 @@ $sql = $pdo->prepare("DELETE FROM `pessoas`  ");
 // deletar
 
 
+
+
 // selecionar
 
 $pdo = new PDO("mysql:host=localhost;dbname=aulasphp", 'root','');
@@ -43,11 +45,6 @@ foreach ($info as $key => $value) {
 
 // selecionar
 
-
-
- 
-
-// selecionar
 
 
 
